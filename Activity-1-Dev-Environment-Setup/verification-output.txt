@@ -1,0 +1,23 @@
+ACTIVITY 1 - C/C++ ENVIRONMENT VERIFICATION
+Actual command output captured on 2026-11-03 15:21
+
+> gcc --version
+gcc.exe (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3) 16.2.0
+Copyright (C) 2026 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+> gcc -dumpmachine
+x86_64-w64-mingw32
+
+> gcc -Wall -Wextra -std=c11 hello.c -o hello.exe
+Compiler exit code: 0
+
+> .\hello.exe
+Hello, World!
+Program exit code: 0
+
+Editor: Visual Studio Code
+Extension: Microsoft C/C++ (ms-vscode.cpptools)
+RESULT: PASS - compiled without warnings and ran successfully.
